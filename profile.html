@@ -1,0 +1,111 @@
+<!---Neila Jamieson 2007748-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ScentOpia</title>
+  <link rel="stylesheet" href="../style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Abel&family=Unna:ital,wght@0,400;0,700;1,400;1,700&family=Vollkorn:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+</head>
+<header>
+  <nav class="navbar">
+  <div class="logo">
+    <img src="../Assets/ScentOpia_Logo.png" alt="ScentOpia Logo" /> 
+  </div>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="products.html">Products</a></li>
+    <li><a href="about.html">About Us</a></li>
+    <li><a href="cart.html"><img src="../Assets/cart.gif" alt="Cart" class="cartIcon" /></a></li>
+    <li><a href="profile.html"><img src="../Assets/profile.gif" alt="Profile" class="profileIcon" /></a></li>
+  </ul>
+</nav>
+<div class="promoBanner">
+  🎉 Use discount code <strong>FREE20</strong> for <strong>20% OFF</strong> your order!
+</div>
+</header>
+<body>
+
+  <div class="authContainer">
+    <!-- Register Form Panel -->
+    <div class="formPanel registerPanel active" id="registerPanel">
+      <h2>Create Account</h2>
+      <p class="subtitle">Join ScentOpia and discover your signature scent</p>
+      <form id="registerForm">
+        <div class="formGroup">
+          <label for="fullName">Full Name</label>
+          <input type="text" id="fullName" placeholder="Enter your full name" required />
+        </div>
+        <div class="formRow">
+          <div class="formGroup">
+            <label for="dob">Date of Birth</label>
+            <input type="date" id="dob" required />
+          </div>
+          <div class="formGroup">
+            <label for="registerEmail">Email</label>
+            <input type="email" id="registerEmail" placeholder="you@email.com" required />
+          </div>
+        </div>
+        <div class="formGroup">
+          <label for="registerUsername">Username</label>
+          <input type="text" id="registerUsername" placeholder="Choose a username" required />
+        </div>
+        <div class="formGroup">
+          <label for="registerPassword">Password</label>
+          <input type="password" id="registerPassword" placeholder="Min. 6 characters" required minlength="6" />
+        </div>
+        <button type="submit" class="formBtn">REGISTER</button>
+        <p class="privacy">By registering, you agree to our Terms & Conditions. Your data is safe with us.</p>
+      </form>
+    </div>
+
+    <!-- Login Form Panel -->
+    <div class="formPanel loginPanel" id="loginPanel">
+      <h2>Welcome Back</h2>
+      <p class="subtitle">Sign in to continue your fragrance journey</p>
+      <form id="loginForm">
+        <div class="formGroup">
+          <label for="loginUsername">Username or Email</label>
+          <input type="text" id="loginUsername" placeholder="Enter username or email" required />
+        </div>
+        <div class="formGroup">
+          <label for="loginPassword">Password</label>
+          <input type="password" id="loginPassword" placeholder="Enter your password" required minlength="6" />
+        </div>
+        <div class="checkboxRow">
+          <input type="checkbox" id="rememberMe" />
+          <label for="rememberMe">Remember me</label>
+        </div>
+        <button type="submit" class="formBtn">SIGN IN</button>
+      </form>
+    </div>
+
+    <!-- Logged In Panel -->
+    <div class="loggedInPanel" id="loggedInPanel">
+      <div class="welcomeIcon">👋</div>
+      <h2>Welcome, <span id="welcomeName">User</span>!</h2>
+      <p>You are currently logged in to ScentOpia.</p>
+      <button class="logoutBtn" id="logoutBtn">LOG OUT</button>
+    </div>
+
+    <!-- Overlay - Show Login Prompt -->
+    <div class="overlayPanel">
+      <div class="overlayContent overlayLogin active" id="overlayLogin">
+        <h3>Already a Member?</h3>
+        <p>Sign in to access your account and continue shopping your favorite scents.</p>
+        <button class="switchBtn" id="showLogin">SIGN IN</button>
+      </div>
+      <div class="overlayContent overlayRegister" id="overlayRegister">
+        <h3>New Here?</h3>
+        <p>Create an account and start your journey to finding the perfect fragrance.</p>
+        <button class="switchBtn" id="showRegister">REGISTER</button>
+      </div>
+    </div>
+  </div>
+
+<script src="../profile.js"></script>
+</body>
+</html>

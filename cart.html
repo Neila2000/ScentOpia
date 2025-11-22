@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ScentOpia - Cart</title>
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <img src="../Assets/ScentOpia_Logo.png" alt="ScentOpia Logo" /> 
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="cart.html"><img src="../Assets/cart.gif" alt="Cart" class="cartIcon" /></a></li>
+        <li><a href="profile.html"><img src="../Assets/profile.gif" alt="Profile" class="profileIcon" /></a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="promoBanner">
+  🎉 Use discount code <strong>FREE20</strong> for <strong>20% OFF</strong> your order!
+  </div>
+  <section class="cart">
+    <h2 class="cartTitle">Your Shopping Cart</h2>
+
+    <div class="cartLayout">
+      <div class="cartItems" id="cartItems"></div>
+
+      <div class="cartSummaryBox">
+        <div class="promoSection">
+          <label for="discountCode">Do you have a promo code?</label>
+          <input type="text" id="discountCode" placeholder="Enter code" />
+          <button id="applyDiscountBtn">Apply</button>
+        </div>
+
+        <table class="cartBreakdown">
+          <tr><td>Subtotal:</td><td id="subtotal">JM $0.00</td></tr>
+          <tr><td>Discount:</td><td id="discount">JM $0.00</td></tr>
+          <tr><td>Tax (10%):</td><td id="tax">JM $0.00</td></tr>
+          <tr class="totalRow"><td><strong>Total:</strong></td><td id="total"><strong>JM $0.00</strong></td></tr>
+        </table>
+
+        <button class="checkoutBtn">🛍️ CHECKOUT</button>
+        <p class="helpText">Need help? <a href="tel:+1876897589">Call us at 1-876-897-589</a></p>
+      </div>
+    </div>
+  </section>
+<!-- Image Popup -->
+<div id="imagePopup" class="imagePopup">
+  <span id="closePopup" class="closePopup">×</span>
+  <img id="popupImage" src="" alt="Full View" />
+</div>
+  <script src="../cart.js"></script>
+  <script src="../profile.js"></script>
+</body>
+</html>
